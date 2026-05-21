@@ -2,11 +2,11 @@ import { test } from 'src/fixtures/fixtures';
 import { MainPage } from 'pageObjects/MainPage';
 import { NavigationBarPage } from 'pageObjects/NavigationBarPage';
 import { StartPage } from 'pageObjects/StartPage';
-import { generateRandomEmail } from 'src/utils/valueGenerator';
+import { generateRandomEmail, generateRandomString } from 'src/utils/valueGenerator';
 import logger from 'src/utils/logger';
 
 const URL = process.env.BASE_URL!;
-const NAME = process.env.NAME!;
+const NAME = generateRandomString();
 const EMAIL = generateRandomEmail();
 
 
